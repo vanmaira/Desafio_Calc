@@ -1,0 +1,210 @@
+/*paleta light mode*/
+#A591EB
+#7D7DF5
+#7C8FDF
+#7DADF5
+#78BEEB
+/*paleta dark mode*/
+#0D1B2A
+#5C80BC
+#415A77
+#778DA9
+#E0E1DD
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  }
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#7D7DF5,#A591EB);
+    
+}
+.tamanho1{
+    background-color: #8e518d;
+    color: cornsilk;
+    position: fixed;        }
+.tamanho2{
+    background-color: #8e518d;
+    color: cornsilk;
+    position: fixed;
+    margin-left: 30px;        }
+
+.imgheader{
+    display: flex;
+    flex-direction:row;
+    width: 100px;
+    height: 40px;}
+header {
+    display: flex;
+    flex-direction:row;
+    justify-content: left;
+    align-items: center;
+    background-color:#7DADF5 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;  }
+header ul {
+    list-style: none;  }
+  
+header li {
+    margin: 2px 5px;
+    width: 190px;
+    padding: 10px;
+    text-align: center;  }
+header a {
+    text-decoration: none;
+    color: #fff;  }
+  
+header a:hover {
+    color: #fff;
+    background-color: #78BEEB;
+    padding: 5px 30px;
+    border-radius: 15px;  }
+header img{
+    margin-left: 100px;
+    height: 90%;
+}
+.menu {
+    margin: 10px 30%;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;      }
+.box1a, .box2a, .box3a{
+    display: flex;
+    width: 1200px;
+    flex-direction: column;
+    align-items: center;
+   
+}
+#dark{
+    margin:1%;
+    padding: 2px;
+    border-radius: 20%;
+    background-color: darkblue;
+    color: floralwhite;
+    height: 50px;
+    width: 100px;
+}
+h1{
+    font-size:4em;
+}
+h2{
+    font-size: 3em;
+}
+.box1b{
+    background-color: #78BEEB;
+    width: 1200px;
+    align-items: center;
+    height: 300px;
+    text-align: right;
+}
+.box1b img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 100px;
+    float: left;
+}
+.box1c{
+    background-color: #7C8FDF;
+    align-items: center;
+    height: 300px;
+    width: 1200px;
+}
+.box1c img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 100px;
+    float: right;
+   }
+h3 {
+    padding: 2%;
+    font-size: 2.5em;
+}
+p {
+    padding: 1%;
+    font-size:2em ;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #78BEEB;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 0.5em;
+}
+.whatsapp-link {
+    position: absolute;
+    margin-left: 150px;
+    width: 30px;
+    height: 30px;
+    background-image:url(img/whatsapp-logo-1.png);
+    background-size: cover;
+    border-radius: 50px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+#content{
+    background-color: #7C8FDF;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    border-radius: 30px; 
+}
+.calc{
+    width: 700px;
+    height: 700px;      
+}
+#somar, #subtrair, #multiplicar, #dividir, #porcento, #aquad, #bquad, #aquadb{
+    width: 50px;
+    height: 50px;
+    font-size: 2em;   
+    margin: 20px;
+    margin-right: 38px;
+    border-radius: 20px;
+    background-color: #7C8FDF;    
+}
+#field1, #valora, #valorb{
+    display: flex;
+    font-size: 2em;
+    margin: 10px;
+    text-align: right;
+}
+.box2b, .box2c{
+    background-color:#7C8FDF;
+    border-radius: 30px;
+    margin: 20px;
+    font-size: 1em;
+    width: 60%;
+      
+}
+label, input, #moedas, #temperaturas{
+    font-size: 1.5em;
+    margin: 10px;
+}
+#convmoeda, #convtemp{
+    border-radius: 20px;
+    background-color: #7C8FDF;
+    font-size: 1em;
+    height: 40px;
+}
+#id{
+    width: 300px;
+    height: 300px;
+}
+@media (max-width: 750px) {
+    header, nav ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }

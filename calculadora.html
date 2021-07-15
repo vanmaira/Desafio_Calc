@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="estilo.css" />
+    <title>SoulCalc-Calculadora</title>
+</head>
+<body>
+        <header id="header">        
+                <button class="tamanho1" onclick="diminuir()"> A-</button>
+                <button class="tamanho2" onclick="aumentar()">A+ </button>
+                <img class="imgheader" src="img/logo-dark.png"/>
+                <div class="busca">  
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="conversoes.html">Conversões</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>            
+                </ul>
+                </div>              
+            </header>
+    <main>
+        <div class="todo" id="todo">
+        <div class="box3a">
+            <h1>Calc Tudo</h1>
+            <h2>Calculadora</h2>
+            <button id="dark">Dark Mode</button>
+        </div>
+        <section class="calc">
+            <article>
+              <div id='content'>
+                <div id='content-app'>
+                  <input type='number' id='field1' placeholder="0"  value=""/>
+                  <br>
+                  <button id="somar" onclick="somarValores()">+</button>
+                  <button id="subtrair" onclick="subtrairValores()">-</button>
+                  <button id="multiplicar" onclick="multiplicarValores()">*</button>
+                  <button id="dividir" onclick="dividirValores()">/</button>
+                  <br>
+                  <button id="porcento" onclick="porcentoValores()">%</button>
+                  <button id="aquad" onclick="aquadValores()">a<sup>2</sup></button>
+                  <button id="bquad" onclick="bquadValores()">b<sup>2</sup></button>
+                  <button id="aquadb" onclick="aquadbValores()">a<sup>b</sup></button>
+                  <br>
+                  <input type="text" id="valora" placeholder="Valor A">
+                  <br>
+                  <input type="text" id="valorb" placeholder="Valor B">
+                </div>
+              </div>
+              <br />
+              <br /><br />
+            </article>
+          </section>
+        </div>
+    </main>
+    <script src="calc.js"></script>
+    <footer id="footer">
+      <p>Acesse nossas redes sociais:</p>       
+      <p class="foot"> 
+          <a style="text-decoration: none;color: ivory;" href="https://soulcodeacademy.org/" target='_blank'> <img class="logo1" src="img/logo1.jpg" width="30px"> </a>
+      </p>
+      <p class="foot"> 
+          <a style="text-decoration: none;color: ivory;" href="https://www.instagram.com/soulcodeacademy/?hl=pt" target='_blank'><img class="logo1" src="img/insta.png" width="30px"></a>
+      </p>
+      <p class="foot"> 
+          <a style="text-decoration: none;color: ivory;" href="https://www.linkedin.com/company/soulcodeacademy/" target='_blank'><img class="logo1" src="img/Icone-Linkedin-1.jpg" width="30px"></a>
+      </p>  
+      <p><a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511982039248" target="_blank"> 
+          
+      </a> Entre em contato:</p>              
+    </footer>
+    <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+</body>
+</html>

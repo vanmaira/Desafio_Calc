@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="estilo.css" />
+    <title>SoulCalc-Conversões</title>
+</head>
+<body>
+   
+        <header id="header">        
+                <button class="tamanho1" onclick="diminuir()"> A-</button>
+                <button class="tamanho2" onclick="aumentar()">A+ </button>
+                <img class="imgheader" src="img/logo-dark.png"/>
+                <div class="busca">  
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="conversoes.html">Conversões</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>            
+                </ul>
+                </div>              
+            </header>
+    <main>
+        <div class="todo" id="todo">
+        
+    <div class="box2a">
+        <h1>Calc Tudo</h1>
+        <h2>Conversões</h2>
+        <button id="dark">Dark Mode</button>
+        <body onLoad="slide1()">
+        <img id="id">
+    </div>
+    <fieldset class="box2b">
+        <p>Real para:</p>
+        <div >
+            <label for="nome">R$</label>
+            <input type="number" id="real">
+
+            <select name="moedas"id="moedas">
+                <option value=""></option>
+                <option value="euro">Euro</option>
+                <option value="dolar">Dólar</option>
+                <option value="peso">Pesos Argentinos</option>
+            </select>
+            <br>
+            <button id="convmoeda" onclick="conversao1()">Converter</button>
+
+            <label for="nome">Resultado</label>
+            <input type="number" id="result1" placeholder="0">    
+        </div>
+    </fieldset>
+    <fieldset class="box2c">
+        <p>Celsius para:</p>
+        <div >
+            <label for="nome">ºC</label>
+            <input type="number" id="celsius">
+
+            <select id="temperaturas">
+                <option value=""></option>
+                <option value="fahre">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <br>
+            <button id="convtemp" onclick="conversao2()">Converter</button>
+
+            <label for="nome">Resultado</label>
+            <input type="number" placeholder= "0" id="result2"> 
+        </div>
+    </fieldset>
+    </div>
+</div>
+    </main> 
+    <script src="calc.js"></script>
+    <footer id="footer">
+        <p>Acesse nossas redes sociais:</p>       
+        <p class="foot"> 
+            <a style="text-decoration: none;color: ivory;" href="https://soulcodeacademy.org/" target='_blank'> <img class="logo1" src="img/logo1.jpg" width="30px"> </a>
+        </p>
+        <p class="foot"> 
+            <a style="text-decoration: none;color: ivory;" href="https://www.instagram.com/soulcodeacademy/?hl=pt" target='_blank'><img class="img//insta.png" width="30px"></a>
+        </p>
+        <p class="foot"> 
+            <a style="text-decoration: none;color: ivory;" href="https://www.linkedin.com/company/soulcodeacademy/" target='_blank'><img class="logo1" src="img/Icone-Linkedin-1.jpg" width="30px"></a>
+        </p>  
+        <p><a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511982039248" target="_blank"> 
+            
+        </a> Entre em contato:</p>               
+    </footer>
+    <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+</body>
+</html>
